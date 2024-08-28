@@ -1,0 +1,157 @@
+/* Root variables for consistent theme */
+:root {
+  --primary-color: #007bff;
+  --primary-hover: #0069d9;
+  --background-color: #f1f1f1;
+  --text-color: #333;
+  --table-header-color: #f2f2f2;
+  --border-color: #ddd;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+
+
+  color: var(--text-color);
+  min-height: 100vh;
+}
+
+
+
+
+/* Login Container */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: var(--background-color);
+}
+
+.welcome-message {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--text-color);
+}
+
+.login-button {
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 0.3rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: var(--primary-hover);
+}
+
+.login-button:active {
+  background-color: #005bb5;
+}
+
+/* Connected Container */
+.connected-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: var(--background-color);
+}
+
+.connected-header {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--text-color);
+}
+
+.connected-account {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--text-color);
+}
+
+.connected-button {
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 0.3rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 2rem;
+}
+
+.connected-button:hover {
+  background-color: var(--primary-hover);
+}
+
+.connected-button:active {
+  background-color: #005bb5;
+}
+
+.connected-contract-address {
+  font-size: 1.2rem;
+  text-align: center;
+  color: var(--text-color);
+}
+
+/* Candidates Table */
+.candidates-table {
+  border-collapse: collapse;
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.candidates-table th, .candidates-table td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.candidates-table th {
+  background-color: var(--table-header-color);
+  color: var(--text-color);
+}
+
+.candidates-table td {
+  color: var(--text-color);
+}
+
+/* Input */
+input[type=number] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+  margin-bottom: 10px;
+  width: 100%;
+  max-width: 200px;
+  transition: border-color 0.3s ease;
+}
+
+input[type=number]:focus {
+  border-color: var(--primary-color);
+  outline: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .candidates-table {
+    width: 100%;
+  }
+}
