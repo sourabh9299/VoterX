@@ -27,7 +27,7 @@ const Connected = (props) => {
                         onChange={handleNumberChange}
                         min="0"
                     />
-                    <br />
+                  
                     <button className="login-button" onClick={voteFunction}>Vote</button>
                 </div>
             )}

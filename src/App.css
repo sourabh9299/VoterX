@@ -2,7 +2,7 @@
 :root {
   --primary-color: #007bff;
   --primary-hover: #0069d9;
-  --background-color: #f1f1f1;
+  /* --background-color: #702a2a; */
   --text-color: #333;
   --table-header-color: #f2f2f2;
   --border-color: #ddd;
@@ -12,12 +12,57 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Arial', sans-serif;
-
-
-  color: var(--text-color);
+  background:url('../images/bgBanner.webp');
+  background-position: center;
+  background-size: cover;
+  backdrop-filter: blur(2px);
   min-height: 100vh;
 }
 
+.connected-container{
+  background-color: blue;
+}
+
+
+.welcome-message{
+  background: linear-gradient(45deg, #FF9933, #FFFFFF, #138808, #000080);
+  background-size: 200% 200%;
+  animation: gradientChange 5s ease infinite;
+  height: 50px;
+  border-radius: 50px;
+  padding: 20px;
+  color: black !important;
+  border: solid wheat;
+}
+
+
+@keyframes gradientChange {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+.connected-header{
+  background: linear-gradient(45deg, #FF9933, #FFFFFF, #138808, #000080);
+  background-size: 200% 200%;
+  animation: gradientChange 5s ease infinite;
+  height: 50px;
+  border-radius: 50px;
+  padding: 20px;
+  color: black !important;
+  border: solid wheat;
+}
+
+.myTable{
+  color: white;
+}
 
 
 
@@ -112,6 +157,7 @@ body {
   border-collapse: collapse;
   width: 80%;
   max-width: 600px;
+  background-color: #33333383;
   margin: 0 auto;
   text-align: center;
 }
@@ -128,7 +174,7 @@ body {
 }
 
 .candidates-table td {
-  color: var(--text-color);
+  color: white;
 }
 
 /* Input */

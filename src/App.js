@@ -17,7 +17,7 @@ function App() {
   const [number, setNumber] = useState('');
   const [canVote, setCanVote] = useState(false);
 
-  // Utility to create a contract instance
+  
   function getContract(signerOrProvider) {
     return new ethers.Contract(contractAddress, contractAbi, signerOrProvider);
   }
